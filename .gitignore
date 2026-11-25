@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+out/
+keys/
+*.pem
+installer/setup
+installer/setup.exe
+installer/_setup-build/
+tests/out/
+__pycache__/
+*.pyc
+*.log
+.goldline-export
+

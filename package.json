@@ -1,0 +1,48 @@
+{
+  "name": "goldline-takeoff",
+  "productName": "Goldline Takeoff",
+  "version": "0.23.2",
+  "description": "Goldline Takeoff - quantity take-off from drawings",
+  "main": "electron/main.cjs",
+  "updateFeed": "https://github.com/nabilmunla/goldline-takeoff",
+  "reportEndpoint": "",
+  "countEndpoint": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && node tools/build-engines.mjs",
+    "test": "tsx --test tests/*.test.ts",
+    "stress": "tsx tests/stress.ts",
+    "stress:qto": "STRESS_KIND=qto STRESS_WORKER=tests/stress-qto-worker.ts tsx tests/stress.ts"
+  },
+  "devDependencies": {
+    "@electron/fuses": "^2.1.3",
+    "@embedpdf/pdfium": "^2.15.1",
+    "@fontsource-variable/inter": "^5.2.6",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.5.2",
+    "electron": "^44.10.0",
+    "fractional-indexing": "^3.2.0",
+    "mupdf": "^1.28.1",
+    "pe-library": "^2.0.1",
+    "playwright": "^1.56.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resedit": "^3.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "polygon-clipping": "^0.15.7"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "Nabil Munla",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabilmunla/goldline-takeoff.git"
+  },
+  "homepage": "https://github.com/nabilmunla/goldline-takeoff"
+}
